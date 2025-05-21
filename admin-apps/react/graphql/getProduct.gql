@@ -1,0 +1,16 @@
+query products($term: String!) {
+  products(term: $term, page: 1, pageSize: 50) @context(provider: "vtex.catalog-graphql@1.x") {
+    items {
+      id
+      name
+      ref
+      skus {
+        id
+        ref
+        imageUrl
+        isActive
+        skuName
+      }
+    }
+  }
+}

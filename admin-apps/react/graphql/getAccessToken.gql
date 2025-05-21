@@ -1,0 +1,8 @@
+query getAccessToken {
+  getToken @context(provider: "shoppingsmileshml.jwt-provider") {
+    access_token,
+    scope,
+    expires_in,
+    token_type
+  }
+}

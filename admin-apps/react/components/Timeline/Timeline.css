@@ -1,0 +1,13 @@
+.timeline {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 6px 16px;
+  flex-grow: 1;
+}
+
+.timeline--alternate {
+  background-color: transparent;
+}

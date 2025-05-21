@@ -1,0 +1,79 @@
+{
+  "vendor": "sjdigitalhlg",
+  "name": "custom-apps",
+  "version": "4.0.18",
+  "title": "Custom Apps",
+  "description": "All Custom Apps of this store",
+  "builders": {
+    "react": "3.x",
+    "messages": "1.x",
+    "docs": "0.x",
+    "store": "0.x",
+    "node": "6.x",
+    "pixel": "0.x",
+    "styles": "2.x"
+  },
+  "settingsSchema": {
+    "title": "custom-apps",
+    "type": "object",
+    "allowCustomHtmlTags": {
+      "title": "Allow custom HTML tags",
+      "description": "Keep in mind that using custom HTML tags can drastically impact store performance",
+      "type": "boolean"
+    }
+  },
+  "dependencies": {
+    "vtex.address-form": "4.x",
+    "vtex.styleguide": "9.x",
+    "vtex.css-handles": "0.x",
+    "vtex.product-context": "0.x",
+    "vtex.session-client": "1.x",
+    "vtex.product-quantity": "1.x",
+    "vtex.pixel-manager": "1.x",
+    "vtex.checkout-resources": "0.x",
+    "vtex.store-resources": "0.x",
+    "vtex.order-manager": "0.x",
+    "vtex.order-items": "0.x",
+    "vtex.search-graphql": "0.x",
+    "vtex.checkout-graphql": "0.x",
+    "vtex.store-graphql": "2.x",
+    "vtex.apps-graphql": "3.x",
+    "vtex.format-currency": "0.x",
+    "vtex.order-shipping": "0.x",
+    "vtex.add-to-cart-button": "0.x",
+    "vtex.modal-layout": "0.x",
+    "vtex.store-components": "3.x",
+    "vtex.product-price": "1.x",
+    "vtex.rich-text": "0.x",
+    "vtex.search-page-context": "0.x",
+    "vtex.shipping-estimate-translator": "2.x",
+    "vtex.slider-layout": "0.x",
+    "vtex.list-context": "0.x",
+    "vtex.device-detector": "0.x",
+    "vtex.on-view": "1.x",
+    "vtex.native-types": "0.x",
+    "vtex.my-account": "1.x",
+    "vtex.my-account-commons": "1.x",
+    "vtex.catalog-graphql": "1.x",
+    "vtex.product-list": "0.x",
+    "vtex.order-placed": "2.x",
+    "vtex.order-placed-graphql": "1.x",
+    "vtex.product-summary-context": "0.x"
+  },
+  "peerDependencies": {
+    "sjdigital.reviews-and-ratings": "3.x"
+  },
+  "registries": [
+    "smartcheckout"
+  ],
+  "policies": [
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "*",
+        "path": "/*"
+      }
+    }
+  ],
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

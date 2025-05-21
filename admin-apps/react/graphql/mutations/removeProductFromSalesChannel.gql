@@ -1,0 +1,3 @@
+mutation removeProductFromSalesChannel($id: ID, $productId: ID) @context(provider: "vtex.catalog-graphql@1.x"){
+  removeProductFromSalesChannel(productId: $productId, salesChannelId: $id)  
+}

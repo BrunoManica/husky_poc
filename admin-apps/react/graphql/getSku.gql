@@ -1,0 +1,36 @@
+query getSku ($identifier: SKUUniqueIdentifier) {
+  sku(identifier: $identifier) @context(provider: "vtex.catalog-graphql@1.x") {
+    id
+    productId
+    name
+    refId
+  	isActive
+    height
+    length
+    width
+    weightKg
+    packagedHeight
+    cubicWeight
+    kitItensSellApart
+    commercialConditionId
+    isKit
+    images{
+      url
+    }
+    unitMultiplier
+    creationDate
+    modalType
+    measurementUnit
+    creationDate
+    ean
+    specifications{
+      sku{
+        id
+        value
+        field {
+          name
+        }
+      }
+    }
+  }
+}

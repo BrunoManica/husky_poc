@@ -1,0 +1,23 @@
+mutation updateSku($input: UpdateSKUInput) {
+  updateSKU(sku: $input) @context(provider: "vtex.catalog-graphql@1.x") {
+    productId
+    commercialConditionId
+    kitItensSellApart
+    id
+    name
+    ean
+    refId
+    modalType
+    isActive
+    height
+    length
+    width
+    weightKg
+    packagedHeight
+    cubicWeight
+    isKit
+    unitMultiplier
+    creationDate
+    measurementUnit
+  }   
+}

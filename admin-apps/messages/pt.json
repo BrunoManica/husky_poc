@@ -1,0 +1,11 @@
+{
+  "admin-example.navigation.label-group": "Exportar inscritos do formulário de noticias",
+  "admin-example.navigation.label-details": "Exportar inscritos do formulário de noticias para o formato xls",
+  "admin-example.navigation.label-table": "Exemplo de tabela",
+  "admin-example.navigation.search.kws": "formulário, inscritos",
+  "admin-example.navigation.details.search.kws": "detalhe, mock, test, oi",
+  "admin-example.navigation.table.search.kws": "tabela, mock, test, tchau",
+  "admin-example.hello-world": "Inscrições do formulário de notícias",
+  "admin-example.details": "Admin detalhes",
+  "admin-example.navigation.label-group-app": "Cadastro de produto fsj"
+}

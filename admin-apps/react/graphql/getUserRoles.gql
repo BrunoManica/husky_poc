@@ -1,0 +1,10 @@
+query getUserRoles {
+  userRoles @context(provider: "vtex.admin-graphql@2.x") {
+    roles {
+      id
+      isAdmin
+      roleType
+      name
+    }
+  }
+}
