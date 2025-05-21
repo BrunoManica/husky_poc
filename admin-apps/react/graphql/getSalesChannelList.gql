@@ -1,6 +1,0 @@
-  query getSaleschannel @context(provider: "vtex.catalog-graphql@1.x"){
-  salesChannelList {
-    id,
-    name
-  }
-}

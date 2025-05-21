@@ -1,3 +1,0 @@
-mutation addProductToSalesChannel($id: ID, $productId: ID) @context(provider: "vtex.catalog-graphql@1.x"){
-  addProductToSalesChannel(productId: $productId, salesChannelId: $id)  
-}
