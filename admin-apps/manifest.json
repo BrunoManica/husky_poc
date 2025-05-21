@@ -1,0 +1,25 @@
+{
+  "name": "admin-apps",
+  "vendor": "sjdigitalhlg",
+  "version": "0.0.1",
+  "title": "Admin Apps",
+  "description": "Neste app estão todos os apps custom do admin da sjdigital",
+  "scripts": {
+    "postreleasy": "vtex publish --verbose"
+  },
+  "dependencies": {
+    "vtex.render-runtime": "8.x",
+    "vtex.styleguide": "9.x",
+    "vtex.css-handles": "0.x",
+    "vtex.format-currency": "0.x",
+    "vtex.catalog-graphql": "1.x",
+    "vtex.admin-graphql": "2.x"
+  },
+  "builders": {
+    "react": "3.x",
+    "admin": "0.x",
+    "messages": "1.x",
+    "docs": "0.x"
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

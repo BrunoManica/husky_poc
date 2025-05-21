@@ -1,0 +1,84 @@
+{
+  "name": "coupon-hint",
+  "vendor": "sjdigitalhlg",
+  "version": "0.2.9",
+  "title": "Email coupons",
+  "description": "",
+  "dependencies": {
+    "vtex.styleguide": "9.x",
+    "vtex.css-handles": "0.x",
+    "vtex.order-placed": "2.x",
+    "vtex.order-placed-graphql": "1.x",
+    "vtex.store-components": "3.x",
+    "vtex.rich-text": "0.x",
+    "vtex.product-context": "0.x"
+  },
+  "builders": {
+    "messages": "1.x",
+    "react": "3.x",
+    "store": "0.x"
+  },
+  "credentialType": "absolute",
+  "policies": [
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "httpstat.us",
+        "path": "*"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "masterws.stg.hanzo.com.br",
+        "path": "*"
+      }
+    },
+    {
+      "name": "colossus-fire-event"
+    },
+    {
+      "name": "colossus-write-logs"
+    },
+    {
+      "name": "ADMIN_DS"
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "api.vtex.com",
+        "path": "/dataentities/*"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "portal.vtexcommercestable.com.br",
+        "path": "/api/*"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "*",
+        "path": "/*"
+      }
+    },
+    {
+      "name": "template-criar"
+    },
+    {
+      "name": "template-editar"
+    }
+  ],
+  "billingOptions": {
+    "type": "free",
+    "support": {
+      "url": "https://penseavanti.com.br/"
+    }
+  },
+  "registries": [
+    "smartcheckout"
+  ],
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}
