@@ -1,6 +1,6 @@
 {
   "name": "wish-list",
-  "vendor": "sjdigitalhlg",
+  "vendor": "sjdigital",
   "version": "0.0.2",
   "title": "Wish List",
   "description": "Custom extended Wishlist app is designed for B2C. It adds a heart icon to the Shelfs and Product Page, so the user can add it to the Wishlist, you can list all the Wishlisted items at /wishlist",
